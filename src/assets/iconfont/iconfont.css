@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3162642 */
+  src: url('iconfont.woff2?t=1704960528918') format('woff2'),
+       url('iconfont.woff?t=1704960528918') format('woff'),
+       url('iconfont.ttf?t=1704960528918') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pipe-segment-group:before {
+  content: "\e61d";
+}
+
+.icon-facilities-drawing:before {
+  content: "\e61b";
+}
+
+.icon-manage-drawing:before {
+  content: "\e61c";
+}
+
+.icon-toolbox:before {
+  content: "\e61a";
+}
+
+.icon-primary-pressure:before {
+  content: "\e619";
+}
+
+.icon-pump-station:before {
+  content: "\e617";
+}
+
+.icon-water-meter-well:before {
+  content: "\e618";
+}
+
+.icon-device-list:before {
+  content: "\e60e";
+}
+
+.icon-settings:before {
+  content: "\e609";
+}
+
+.icon-pipeline-query:before {
+  content: "\e60b";
+}
+
+.icon-device-drawing:before {
+  content: "\e60c";
+}
+
+.icon-device-query:before {
+  content: "\e60d";
+}
+
+.icon-download-pictures:before {
+  content: "\e603";
+}
+
+.icon-ranging:before {
+  content: "\e604";
+}
+
+.icon-initial-range:before {
+  content: "\e605";
+}
+
+.icon-conventional-sign:before {
+  content: "\e606";
+}
+
+.icon-layer-control:before {
+  content: "\e607";
+}
+
+.icon-print:before {
+  content: "\e608";
+}
+
+.icon-location:before {
+  content: "\e602";
+}
+
+.icon-box-select:before {
+  content: "\e601";
+}
+
+.icon-shezhi:before {
+  content: "\e892";
+}
+
+.icon-quanping:before {
+  content: "\e655";
+}
+
+.icon-fuhao-ziti:before {
+  content: "\e71f";
+}
+
+.icon-guanbi:before {
+  content: "\eca0";
+}
+
+.icon-sousuo1:before {
+  content: "\e60a";
+}
+

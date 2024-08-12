@@ -1,0 +1,38 @@
+<!--
+ * @Author: liubo lb@hzguode.com
+ * @Date: 2023-09-04 10:07:25
+ * @LastEditors: liubo lb@hzguode.com
+ * @LastEditTime: 2023-09-25 14:34:35
+ * @FilePath: /guangde-map/public/demo.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<% if (mapSysMode === 'readOnly') { %>
+  <div class="custom-name"><%= name || '--' %></div>
+  <% Object.keys(deviceDetail).forEach((item) => { %>
+    <div class="custom-content">
+      <% if (deviceDetail[item].hasOwnProperty('title') && deviceDetail[item].data.length > 0) { %>
+        <div class="custom-title"><%= deviceDetail[item].title %></div>
+      <% } %>
+      <% deviceDetail[item].data.forEach((it) => { %>
+        <% if (item === 'chart') { %>
+          <div id="<%= it.id %>" class="custom-chart"></div>
+        <% } else { %>
+        <div class="content-item">
+          <div class="item-label"><%= it.label %></div>
+          <div class="item-value"><%= it.value %></div>
+        </div>
+        <% } %>
+      <% }) %>
+    </div>
+  <% }) %>
+<% } %> <% if (mapSysMode === 'writable') { %>
+<div class="content-box">
+  <div class="content-row"><%= name || '--' %></div>
+  <div class="content-row">地址：<%= result.address || '--' %></div>
+</div>
+<div class="custom-btns">
+  <% operateBtns.forEach((item) => { %>
+  <div id="<%= item %>"><%= OPERATE_BTNS[item] %></div>
+  <% }) %>
+</div>
+<% } %>
