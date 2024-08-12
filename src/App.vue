@@ -2,13 +2,22 @@
  * @Author: liubo lb@hzguode.com
  * @Date: 2023-08-28 14:37:02
  * @LastEditors: liubo lb@hzguode.com
- * @LastEditTime: 2024-08-12 10:43:19
+ * @LastEditTime: 2024-08-12 10:44:22
  * @FilePath: /guangde-map/src/App.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <template>
   <router-view></router-view>
 </template>
+
+<script setup>
+import { onMounted } from "vue";
+
+onMounted(() => {
+  console.log('=========>初始化111', 初始化11);
+  
+})
+</script>
 
 
 <style lang="scss">
